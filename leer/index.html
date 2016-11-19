@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="miscript.js"></script>
+    <style type="text/css">
+        /*escritorio*/
+
+        @media(min-width: 1200px) {
+            body {
+                color: green;
+            }
+        }
+        /*table escritorio pequeño*/
+
+        @media(min-width: 768px)and(max-width: 979px) {
+            body {
+                color: green;
+            }
+        }
+        /*tablet o smartphone*/
+
+        @media(max-width: 767px) {
+            body {
+                color: blue;
+            }
+        }
+        /*smartphone*/
+
+        @media(max-width: 480px) {
+            body {
+                color: yellow;
+            }
+        }
+    </style>
+    <title>Crear</title>
+    <script type="text/javascript">
+
+    </script>
+
+</head>
+
+<body>
+    <div class="text-center">
+        <h1>Bienvenido </h1>
+    </div>
+<div class="row">
+  <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+  <select class=" form-control" name="persona" >
+    <option >nombre</option>
+    <option >edad</option>
+    <option >apellido</option>
+  </select>
+</div>
+<button type="button" name="button" class="btn btn-primary" onclick="leer()">Leer</button>
+
+</div>
+<div id="respuesta">
+  
+</div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){//cuando el documento este listo cargado
+  $("#enviar").click(function() {
+    var nombre_u=$("#nombre").val();
+    var email_u=$("#email").val();
+    var pass_u=$("#password").val();
+    $.post("prueba_post.php",
+      {nombre:nombre_u,email:email_u,pass:pass_u},
+      function(datos){
+        $("#resultado").html(datos);
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+
+<div id="caja"><h2>Registro de usuario</h2>
+  <br>
+  <label for="nombre">Nombre</label>
+  <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre" value="">
+  <br>
+  <label for="email">email</label>
+  <input type="text" name="email" id="email" placeholder="ingresa tu email" value="">
+  <br>
+  <label for="clave">contraseña</label>
+  <input type="password" name="pass" id="password" placeholder="ingresa tu contraseña" value="">
+  <br>
+
+  <input type="submit" name="enviar" value="Enviar" id="enviar">
+  <div id="resultado">
+
+  </div>
+</div>
+
+
+</body>
+</html
